@@ -1,0 +1,32 @@
+﻿version: "3.8"
+
+services:
+
+  lcn-articles-keda-rabbitmq:
+    container_name: lcn-articles-keda-rabbitmq
+    image: masstransit/rabbitmq
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    networks:
+      - lcn-articles-keda
+
+  lcn-articles-keda-consumer:
+    container_name: lcn-articles-keda-consumer
+    image: lcn/articles-keda
+    build:
+      context: .
+      dockerfile: /src/LcN.Articles.Keda.Consumer/Dockerfile 
+    ports:
+      - 80:80
+      - 443:443
+    environment:
+      - RabbitMQ=lcn-articles-keda-rabbitmq
+    networks:
+      - lcn-articles-keda  
+    depends_on:
+      - lcn-articles-keda-rabbitmq
+
+networks:
+  lcn-articles-keda:
+    driver: bridge
