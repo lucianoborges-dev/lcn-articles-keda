@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  lcn.articles.keda.app:
+    image: ${DOCKER_REGISTRY-}lcnarticleskedaapp
+    build:
+      context: .
+      dockerfile: src/LcN.Articles.Keda.App/Dockerfile

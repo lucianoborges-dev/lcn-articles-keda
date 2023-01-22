@@ -9,10 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LcN.Articles.Keda.Model", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LcN.Articles.Keda.Producer", "src\LcN.Articles.Keda.Producer\LcN.Articles.Keda.Producer.csproj", "{7776B378-BC63-40CE-A486-BAFF06820576}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8D80FED1-1C49-405B-BCF4-0B49438EB862}"
-	ProjectSection(SolutionItems) = preProject
-		docker-compose.yaml = docker-compose.yaml
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LcN.Articles.Keda.App", "src\LcN.Articles.Keda.App\LcN.Articles.Keda.App.csproj", "{B7211488-B66D-444F-90E3-3DA8ADCFD8BC}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{0CB84D0A-F09F-4E77-ACC4-016C7EE26F41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +31,14 @@ Global
 		{7776B378-BC63-40CE-A486-BAFF06820576}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7776B378-BC63-40CE-A486-BAFF06820576}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7776B378-BC63-40CE-A486-BAFF06820576}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7211488-B66D-444F-90E3-3DA8ADCFD8BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7211488-B66D-444F-90E3-3DA8ADCFD8BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7211488-B66D-444F-90E3-3DA8ADCFD8BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7211488-B66D-444F-90E3-3DA8ADCFD8BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CB84D0A-F09F-4E77-ACC4-016C7EE26F41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CB84D0A-F09F-4E77-ACC4-016C7EE26F41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CB84D0A-F09F-4E77-ACC4-016C7EE26F41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CB84D0A-F09F-4E77-ACC4-016C7EE26F41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
