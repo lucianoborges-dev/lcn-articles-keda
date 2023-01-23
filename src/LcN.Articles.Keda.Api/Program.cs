@@ -15,6 +15,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddSingleton<PlaceNameGenerator>();
+builder.Services.AddSingleton<PersonNameGenerator>();
 builder.Services.AddSingleton<ProducerService>();
 
 builder.Services.AddMassTransit(x =>
